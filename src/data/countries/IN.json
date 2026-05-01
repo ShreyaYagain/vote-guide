@@ -1,0 +1,41 @@
+{
+  "code": "IN",
+  "name": "India",
+  "election_name": "General Election 2026",
+  "ec_url": "https://eci.gov.in",
+  "flag": "/flags/IN.svg",
+  "phases": [
+    { "phase": 1, "date": "2026-04-19", "states": ["Assam", "Bihar"] },
+    { "phase": 2, "date": "2026-04-26", "states": ["Karnataka", "Kerala"] },
+    { "phase": 3, "date": "2026-05-07", "states": ["Maharashtra", "Goa"] },
+    { "phase": 4, "date": "2026-05-13", "states": ["Rajasthan", "Uttar Pradesh"] },
+    { "phase": 5, "date": "2026-05-20", "states": ["Punjab", "Himachal Pradesh"] },
+    { "phase": 6, "date": "2026-05-25", "states": ["Delhi", "Haryana"] },
+    { "phase": 7, "date": "2026-06-01", "states": ["West Bengal", "Tamil Nadu"] }
+  ],
+  "deadlines": [
+    { 
+      "label": "Voter registration deadline", 
+      "date": "2026-03-15", 
+      "done_by_default": false,
+      "url": "https://voters.eci.gov.in/"
+    },
+    { 
+      "label": "Polling day (your phase)", 
+      "date": "2026-04-26", 
+      "done_by_default": false 
+    },
+    { 
+      "label": "Results day", 
+      "date": "2026-06-04", 
+      "done_by_default": false 
+    }
+  ],
+  "polling_day": "2026-04-26",
+  "eligibility": {
+    "min_age": 18,
+    "citizenship": "Indian citizen",
+    "id_required": ["Voter ID (EPIC)", "Aadhaar", "Passport", "Driving licence", "PAN Card"]
+  },
+  "ai_context": "India holds a phased general election across 7 phases in 2026. The Election Commission of India (ECI) is the constitutional authority. Voters use Electronic Voting Machines (EVMs) with VVPAT. Registration is done via the NVSP portal or Voters' Helpline app."
+}

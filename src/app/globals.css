@@ -1,0 +1,127 @@
+/* ===== VoteGuide Heritage Aesthetic Styles ===== */
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/dm-sans/400.css";
+@import "@fontsource/dm-sans/500.css";
+@import "@fontsource/dm-sans/700.css";
+@import "@fontsource/dm-mono/400.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #FAF7F0; /* Cream */
+  --bg-card: #ffffff;
+  --bg-elevated: #F0EAD6; /* Cream Dark */
+  --bg-border: #D4C4A0; /* Sand */
+  --text-navy: #000080;
+  --text-secondary: #5a5a7a;
+  --color-saffron: #FF9933;
+  --color-green: #138808;
+  --color-gold: #C8960C;
+  --color-maroon: #7B1C1C;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-navy);
+    font-family: var(--font-dm-sans), sans-serif;
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-playfair), serif;
+    color: var(--text-navy);
+  }
+  .font-mono {
+    font-family: var(--font-dm-mono), monospace;
+  }
+}
+
+@layer components {
+  /* ---- Mughal Arch Frame ---- */
+  .arch-frame {
+    position: relative;
+    border-top-left-radius: 40% 100%;
+    border-top-right-radius: 40% 100%;
+    overflow: hidden;
+    border: 2px solid var(--color-gold);
+  }
+
+  .scalloped-top {
+    clip-path: polygon(0 15%, 5% 10%, 10% 7%, 15% 5%, 20% 3%, 25% 2%, 30% 1%, 35% 1%, 40% 2%, 45% 3%, 50% 5%, 55% 3%, 60% 2%, 65% 1%, 70% 1%, 75% 2%, 80% 3%, 85% 5%, 90% 7%, 95% 10%, 100% 15%, 100% 100%, 0 100%);
+  }
+
+  /* ---- Heritage Cards ---- */
+  .card-heritage {
+    @apply bg-white border border-cream-border rounded-card p-6 shadow-sm transition-all duration-300;
+    position: relative;
+  }
+  .card-heritage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    @apply bg-primary;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+  
+  .corner-ornament::after {
+    content: '◆';
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    color: var(--color-gold);
+    font-size: 10px;
+    opacity: 0.6;
+  }
+
+  /* ---- Buttons ---- */
+  .btn-saffron {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-component
+           bg-primary text-white font-bold text-sm uppercase tracking-wider
+           hover:brightness-90 active:scale-95 transition-all shadow-md;
+  }
+  .btn-navy-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-component
+           border-2 border-navy text-navy font-bold text-sm uppercase tracking-wider
+           hover:bg-navy hover:text-white transition-all;
+  }
+
+  /* ---- Background Patterns ---- */
+  .paisley-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 40c0-10 5-15 10-15s10 5 10 15-5 15-10 15-10-5-10-15z' fill='%23FF9933' fill-opacity='0.05'/%3E%3C/svg%3E");
+  }
+
+  /* ---- Mandala Divider ---- */
+  .mandala-divider {
+    @apply flex items-center justify-center py-8 opacity-20;
+    background-image: radial-gradient(circle, var(--color-saffron) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* ---- Countdown Segment ---- */
+  .heritage-countdown-segment {
+    @apply flex flex-col items-center justify-center bg-white border border-gold/30 rounded-lg px-4 py-3 min-w-[80px];
+  }
+  .heritage-countdown-value {
+    @apply text-3xl font-bold text-navy font-mono;
+  }
+  .heritage-countdown-label {
+    @apply text-[10px] uppercase tracking-widest text-secondary mt-1;
+  }
+}
+
+.text-gradient-heritage {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-gold;
+}
+
+/* Tricolour Stripe */
+.tricolour-stripe {
+  height: 4px;
+  background: linear-gradient(to right, #FF9933 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #138808 66.66%);
+}

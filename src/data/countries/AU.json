@@ -1,0 +1,33 @@
+{
+  "code": "AU",
+  "name": "Australia",
+  "election_name": "Federal Election 2025",
+  "ec_url": "https://www.aec.gov.au",
+  "flag": "/flags/AU.svg",
+  "phases": [
+    {
+      "phase": 1,
+      "date": "2025-05-17",
+      "states": ["All States and Territories"]
+    }
+  ],
+  "deadlines": [
+    {
+      "label": "Enrol to vote",
+      "date": "2025-04-20",
+      "done_by_default": false,
+      "url": "https://www.aec.gov.au/enrol/"
+    },
+    {
+      "label": "Polling day",
+      "date": "2025-05-17",
+      "done_by_default": false
+    }
+  ],
+  "eligibility": {
+    "min_age": 18,
+    "citizenship": "Australian citizen",
+    "id_required": ["None required at polling booth (enrolment verified)"]
+  },
+  "ai_context": "Voting is compulsory in Australia for all eligible citizens. The Australian Electoral Commission (AEC) manages the federal elections. The system uses preferential voting."
+}

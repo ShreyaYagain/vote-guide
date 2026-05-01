@@ -1,0 +1,15 @@
+// src/types/chat.ts
+export type MessageRole = "user" | "assistant";
+
+export interface Citation {
+  title: string;
+  url: string;
+}
+
+export interface ChatMessage {
+  id: string;
+  role: MessageRole;
+  content: string;
+  citations?: Citation[];
+  timestamp: number;
+}

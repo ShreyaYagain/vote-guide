@@ -1,0 +1,33 @@
+{
+  "code": "US",
+  "name": "United States",
+  "election_name": "General Election 2024",
+  "ec_url": "https://www.vote.org",
+  "flag": "/flags/US.svg",
+  "phases": [
+    {
+      "phase": 1,
+      "date": "2024-11-05",
+      "states": ["All States"]
+    }
+  ],
+  "deadlines": [
+    {
+      "label": "Voter registration deadline",
+      "date": "2024-10-07",
+      "done_by_default": false,
+      "url": "https://vote.gov"
+    },
+    {
+      "label": "Polling day",
+      "date": "2024-11-05",
+      "done_by_default": false
+    }
+  ],
+  "eligibility": {
+    "min_age": 18,
+    "citizenship": "U.S. Citizen",
+    "id_required": ["Varies by state", "Driver's License", "State ID", "Social Security Number"]
+  },
+  "ai_context": "The US General Election is held on the first Tuesday after the first Monday in November. It includes Presidential, Congressional, and local elections. Voter registration rules vary significantly by state."
+}

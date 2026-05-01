@@ -1,0 +1,33 @@
+{
+  "code": "UK",
+  "name": "United Kingdom",
+  "election_name": "General Election 2024",
+  "ec_url": "https://www.electoralcommission.org.uk",
+  "flag": "/flags/UK.svg",
+  "phases": [
+    {
+      "phase": 1,
+      "date": "2024-07-04",
+      "states": ["All Constituencies"]
+    }
+  ],
+  "deadlines": [
+    {
+      "label": "Register to vote",
+      "date": "2024-06-18",
+      "done_by_default": false,
+      "url": "https://www.gov.uk/register-to-vote"
+    },
+    {
+      "label": "Polling day",
+      "date": "2024-07-04",
+      "done_by_default": false
+    }
+  ],
+  "eligibility": {
+    "min_age": 18,
+    "citizenship": "British, Irish or qualifying Commonwealth citizen",
+    "id_required": ["Voter ID", "Passport", "Driving License"]
+  },
+  "ai_context": "UK General Elections are held to elect Members of Parliament (MPs) to the House of Commons. For the first time in 2024, voters in Great Britain must show photo ID to vote in person."
+}
